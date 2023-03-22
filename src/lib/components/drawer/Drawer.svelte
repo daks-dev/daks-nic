@@ -26,7 +26,7 @@
   let site = {
     name: '', //'Строй Эксп',
     href: '/',
-    img: '/images/logo.small.webp'
+    img: '/assets/images/logo.small.webp'
   };
 
   afterNavigate(() => setTimeout(close, transitionParams.duration));

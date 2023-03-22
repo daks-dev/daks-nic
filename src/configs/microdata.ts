@@ -2,7 +2,7 @@ const config = {
   organization: {
     itemtype: 'http://schema.org/Organization',
     name: 'АО НИЦ «Строительная экспертиза»',
-    logo: '/images/logo.webp',
+    logo: '/assets/images/logo.webp',
     email: 'mail@stroyexp.info',
     telephone: '+7 (495) 323-99-23',
     address: {

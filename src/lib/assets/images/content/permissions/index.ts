@@ -1,7 +1,5 @@
 // A4 dpi 75 : 620 × 877 px
 
-// $lib/assets/images/content/permissions
-
 export const sources = async () => [
   (await import(`./00.png?webp`)).default,
   (await import(`./01.png?webp`)).default,
@@ -24,6 +22,6 @@ export const a4 = async () => [
 ];
 
 export default async () => ({
-  images: await sources(),
+  sources: await sources(),
   thumbnails: await a4()
 });

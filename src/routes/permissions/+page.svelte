@@ -4,7 +4,7 @@
   import type { PageData } from './$types';
   export let data: PageData;
 
-  const { images, thumbnails } = data;
+  const { sources, thumbnails } = data;
 
   const title = 'НИЦ СЭ • Допуски';
   const description = 'Допуски предпрятия АО НИЦ «Строительная экспертиза»';
@@ -23,7 +23,7 @@
     class="content gap-8"
     classes={{ overlay: 'overflow-offset' }}
     options={{ behaviour: 'loop' }}
-    {images}
+    {sources}
     {thumbnails}
     sign
     centered

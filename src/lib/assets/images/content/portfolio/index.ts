@@ -1,25 +1,3 @@
-// const rand = (min: number, max: number) => Math.round(Math.random() * (max - min) + min);
-//`https://picsum.photos/seed/${rand(0,200)}/800/800`
-
-/*
-const loader = async (directives = '') => {
-  directives = '?' + directives + (directives ? '&' : '') + 'webp';
-  const images = [];
-  for (let i = 0; i < 19; i++)
-    images.push(
-      (
-        await import(
-          `./${(i < 10 ? '0' : '') + i}.jpg${directives}`
-        )
-      ).default
-    );
-  console.log(images);
-  return images;
-};
-*/
-
-// $lib/assets/images/content/portfolio
-
 export const sources = async () => [
   (await import(`./00.jpg?webp`)).default,
   (await import(`./01.jpg?webp`)).default,
@@ -87,6 +65,6 @@ export const squares = async () => [
 ];
 
 export default async () => ({
-  images: await sources(),
+  sources: await sources(),
   thumbnails: await squares()
 });

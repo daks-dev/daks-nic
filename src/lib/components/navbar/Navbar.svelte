@@ -1,7 +1,7 @@
 <script lang="ts">
   import classNames from 'classnames';
   import { page } from '$app/stores';
-  import { Navbar, NavLi, NavUl, NavHamburger, Chevron, DarkMode } from 'flowbite-svelte';
+  import { Navbar, NavLi, NavUl, NavHamburger, DarkMode } from 'flowbite-svelte';
   import { Nav, Swiping, Icon } from 'daks-svelte';
   import NavBrand from './NavBrand.svelte';
   import Dropdown from './NavDropdown.svelte';
@@ -42,7 +42,7 @@
     on:click={close}
     href="/">
     <img
-      src="/images/logo.small.webp"
+      src="/assets/images/logo.small.webp"
       class="border-transparent ml-1.5 mr-3 h-6 sm:h-9"
       alt="логотип АО Научно-Исследовательский Центр «Строительная экспертиза»" />
     <!--span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white">

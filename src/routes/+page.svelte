@@ -26,17 +26,19 @@
     <div class="grid lg:grid-cols-12 gap-8 w-full pt-8">
       <div class="mr-auto place-self-center lg:col-span-7 2xl:col-span-8">
         <h1
-          class="mb-8
-                   font-extrabold leading-tight
-                   text-4xl sm:text-5xl lg:text-4xl xl:text-5xl 2xl:text-6xl
-                   text-slate-800 dark:text-slate-200 dark:text-shadow"
+          class="
+            mb-8
+            font-extrabold leading-tight
+            text-4xl sm:text-5xl lg:text-4xl xl:text-5xl 2xl:text-6xl
+            text-slate-800 dark:text-slate-200 dark:text-shadow"
           style:--text-shadow-val="3px">
           <span class="block text-[125%]">АО&nbsp;НИЦ</span>
           Строительная экспертиза
         </h1>
         <p
-          class="mb-4 font-light
-                 text-gray-500 text-sm xs:text-md lg:text-lg dark:text-gray-400 uppercase">
+          class="
+            mb-4 font-light
+            text-gray-500 text-sm xs:text-md lg:text-lg dark:text-gray-400 uppercase">
           один из лидеров на строительном рынке в области консалтинга, лабораторного сопровождения
           строительства, обследования зданий и сооружений
         </p>
@@ -61,18 +63,21 @@
           </Button>
         </div>
         <div
-          class="hidden xs:flex flex-col gap-y-2
-                    text-slate-600 dark:text-slate-400">
+          class="
+            hidden xs:flex flex-col gap-y-2
+            text-slate-600 dark:text-slate-400">
           <a
-            class="font-semibold text-3xl xl:text-4xl hover:text-sky-500
-                   transition duration-200 ease-in-out"
+            class="
+              font-semibold text-3xl xl:text-4xl hover:text-sky-500
+              transition duration-200 ease-in-out"
             href="tel://{telephone.replace(/[\s-()]/g, '')}">
             {telephone}
           </a>
           <a
             rel="nofollow noreferrer"
-            class="text-lg xl:text-xl hover:text-sky-500
-                   transition-all duration-200 ease-in-out"
+            class="
+              text-lg xl:text-xl hover:text-sky-500
+              transition-all duration-200 ease-in-out"
             href={address.url}
             target="_blank"
             itemprop="url">
@@ -81,8 +86,9 @@
         </div>
       </div>
       <div
-        class="hidden lg:flex
-               placeholders lg:col-span-5 2xl:col-span-4 lg:mt-0">
+        class="
+          hidden lg:flex
+          placeholders lg:col-span-5 2xl:col-span-4 lg:mt-0">
         <VideoPlaceholder
           class="w-full h-auto max-w-full"
           size="48" />
