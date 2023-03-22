@@ -59,7 +59,7 @@
         on:click={close}>
         <SidebarBrand
           aClass="py-2"
-          imgClass="h-24 lg:h-24"
+          imgClass="h-24 lg:h-24 drop-shadow-deep dark:drop-shadow-hard hover:!drop-shadow-lg"
           {site} />
         <a
           class="

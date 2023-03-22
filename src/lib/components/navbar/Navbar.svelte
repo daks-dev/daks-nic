@@ -1,8 +1,9 @@
 <script lang="ts">
   import classNames from 'classnames';
   import { page } from '$app/stores';
-  import { Navbar, NavLi, NavUl, NavHamburger, DarkMode } from 'flowbite-svelte';
+  import { Navbar, NavLi, NavUl, NavHamburger } from 'flowbite-svelte';
   import { Nav, Swiping, Icon } from 'daks-svelte';
+  import { DarkMode } from '$lib/components';
   import NavBrand from './NavBrand.svelte';
   import Dropdown from './NavDropdown.svelte';
   import type { NavItem } from 'daks-svelte/types';
