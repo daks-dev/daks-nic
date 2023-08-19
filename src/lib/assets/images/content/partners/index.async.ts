@@ -1,11 +1,11 @@
 import type { ImageMeta, Caption, DataImage } from 'daks-svelte/types'
 
 export const sources = async (): Promise<ImageMeta[]> => [
-  (await import(`./00.png?w=480&h=250&webp`)).default,
-  (await import(`./01.png?w=480&h=250&webp`)).default,
-  (await import(`./02.png?w=480&h=250&webp`)).default,
-  (await import(`./03.png?w=480&h=250&webp`)).default,
-  (await import(`./04.png?w=480&h=250&webp`)).default
+  (await import(`./00.png?w=480&h=250&meta`)).default,
+  (await import(`./01.png?w=480&h=250&meta`)).default,
+  (await import(`./02.png?w=480&h=250&meta`)).default,
+  (await import(`./03.png?w=480&h=250&meta`)).default,
+  (await import(`./04.png?w=480&h=250&meta`)).default
 ];
 
 export const captions: Caption[] = [

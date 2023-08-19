@@ -2,8 +2,12 @@
   import { DEV } from 'esm-env';
   import { AppHead, Icon, SvelteKit } from 'daks-svelte';
 
+  import type { PageData } from './$types';
+  export let data: PageData;
+  const { version } = data;
+
   let waiting = false;
-  let data: any;
+  let done: any;
 
   const robots = 'noindex, follow';
   const title = 'НИЦ СЭ • Admin';
@@ -36,6 +40,12 @@
         alt="GitHUB"
         decoding="async"
         loading="lazy" />
+      <b
+        class="
+          absolute top-4 left-1/2 -translate-x-1/2 pr-0.5
+          text-xs text-slate-400">
+        {version}
+      </b>
     </a>
   </header>
 
@@ -54,11 +64,11 @@
           <Icon
             icon="svg-spinners:180-ring-with-bg"
             class="w-20 h-20 mx-auto self-center" />
-        {:else if data}
-          {#each Object.keys(data) as key}
+        {:else if done}
+          {#each Object.keys(done) as key}
             <div class="flex flex-col">
               <b class="font-mono text-xl text-slate-500">{key}</b>
-              {#each data[key] as el}
+              {#each done[key] as el}
                 <span>{el}</span>
               {/each}
             </div>
@@ -66,7 +76,7 @@
         {:else}
           <Icon
             icon="ic:round-close"
-            class="w-20 h-20 mx-auto self-center" />
+            class="w-20 h-20 mx-auto self-center text-gray-300" />
         {/if}
       </div>
     </div>

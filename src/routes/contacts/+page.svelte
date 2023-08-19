@@ -10,7 +10,7 @@
         properties: {
           iconContent: '<strong class="tracking-wider">АО НИЦ «СЭ»</strong>',
           balloonContentHeader: 'АО НИЦ «Строительная экспертиза»',
-          balloonContentBody: '<img class=mx-auto src=/images/ymap.webp width=192 height=192 />',
+          balloonContentBody: '<img class=mx-auto src=/assets/images/ymap.webp width=192 height=192 />',
           balloonContentFooter:
             '<div class=text-center>время работы: 9 <sup>00</sup> -- 19 <sup>00</sup></div>'
         },

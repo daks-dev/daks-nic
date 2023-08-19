@@ -17,10 +17,11 @@
     text-neutral-600 dark:text-neutral-400">
   {#each icons as icon}
     {@const name = `${prefix}:${icon}`}
-    <figure
+    <button
       on:click={handle}
-      on:keypress
-      class="flex flex-col justify-start items-center cursor-pointer"
+      class="
+        flex flex-col justify-start items-center
+        hover:text-slate-500 cursor-grab"
       title="copy to clipboard"
       data-icon={name}>
       <Icon
@@ -28,13 +29,13 @@
         class="
           pointer-events-none
           w-24 h-24 md:w-32 md:h-32 xl:w-36 xl:h-36" />
-      <figcaption
+      <span
         class="
           pointer-events-none
           text-center text-sm">
         <b class="block text-slate-500">{prefix}</b>
         {icon}
-      </figcaption>
-    </figure>
+      </span>
+    </button>
   {/each}
 </div>

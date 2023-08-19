@@ -112,6 +112,7 @@
                   on:focus
                   on:mouseleave
                   on:mouseover
+                  role="listitem"
                   class={dropdownLinkClassWithChild}>
                   {@html item.label}
                 </span>
